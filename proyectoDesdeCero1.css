@@ -1,0 +1,446 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+body, h1, h2, h3, h4, h5, p, div, button{
+    font-family: "Roboto", Arial, sans-serif !important
+}
+  
+.fondoBlanco{
+    background-color:white;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+
+.fondoOscuro{
+    background-color:#175676;
+}
+
+.fondoClaro{
+    background-color: #4BA3C3;
+}
+
+.gtxt{
+    color:rgb(117, 111, 111);
+}
+
+.wtxt{
+    color:rgb(255, 255, 255);
+}
+
+.btxt{
+    color:rgb(0, 0, 0);
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.parrafos{
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    line-height: 30px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div{
+    padding: 7px;
+
+}
+
+.logos{
+    color:white;
+    width: 400px;
+    height: 230px;    
+}
+
+.logo{
+    width: 75px;
+    margin-left: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:none
+}
+
+.logoFooter{
+    width: 55px;
+    left: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:none
+}
+
+.wppFooter{
+    width: 50px;
+    margin-left:0px;
+    position: fixed;
+    bottom: 25px;
+    right: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+header nav{
+    padding: 0px !important;
+}
+
+header nav div{
+    padding-left: 90px;
+    background-color: #000000;
+}
+
+header nav div div ul li{
+    padding-left: 50px;
+    color: #ffffff;
+}
+
+body header nav div ul li{
+    font-size: 17px;
+    font-family: "Roboto", Arial, sans-serif;
+    transition: 90ms;
+}
+
+body header nav div ul li:hover{
+    font-size: 21px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body header nav div ul li a{
+    color: white 500ms;
+    transition: 120ms;
+}
+
+.btn-primary{
+    background-color: #4BA3C3 !important;
+    border:#4BA3C3 solid 1px;
+    border-radius: 20%;
+}
+
+
+.nav-link{
+    color: #ffffff !important;
+}       
+
+
+#grilla{
+       
+    display: grid;
+    grid-template-areas: 
+        "inicio"
+        "info"
+        "noso"      
+        "paso1"
+        "paso2"
+        "paso3"
+        "paso4"
+        "trans"
+        "footer";
+
+    height: 350px ;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 2fr, 1fr, 2fr, 3fr, 3fr, 3fr, 3fr, 3fr, 2fr;
+    grid-template-columns: 1fr;
+    justify-items:stretch;
+    align-items: stretch;
+    justify-self: stretch;
+}
+
+div#inicio{
+    grid-area: inicio;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 29px;
+    padding:40px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+div#inicio a {
+    padding: 20px;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    position: left;
+    font-size: 20px;
+    background-color: #d62839;
+    transition: font-size 180ms;
+    font-family: "Roboto", Arial, sans-serif;
+    color:rgb(241, 241, 215);
+}
+
+div#inicio a:hover{
+    font-size: 24px;
+}
+
+div#info{
+    grid-area: info;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: rgba(0, 0, 0, 0.4) solid 1px;
+    border-bottom: rgba(0, 0, 0, 0.4) solid 1px;
+    font-family: "Roboto", Arial, sans-serif;
+    color:rgb(241, 241, 215);
+}
+
+div#noso{
+    grid-area: noso;
+    padding: 20px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom:rgba(23, 86, 118,0.08) solid 3px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div#paso1{
+    grid-area: paso1;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom:rgba(23, 86, 118,0.08) solid 3px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div#paso2{
+    grid-area: paso2;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto", Arial, sans-serif;
+    border-bottom:rgba(23, 86, 118,0.08) solid 3px;
+}
+
+div#paso3{
+    grid-area: paso3;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom:rgba(23, 86, 118,0.08) solid 3px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div#paso4{
+    grid-area: paso4;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom:rgba(23, 86, 118,0.05) solid 3px; 
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div#trans{
+    grid-area: trans;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: -webkit-linear-gradient(top, #4BA3C3, #175676); 
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+footer{
+    font-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    grid-area: footer;
+    width: 100%; 
+    height: 90px;
+    font-size: 18px;
+    position: bottom;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+footer div img{ 
+    transform: translateX(-110px);
+}
+
+footer div a{
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.div-accord{
+    background-color:#4BA3C3 !important
+}
+
+.btn-accord{
+    color: black;
+    font-size: 18px !important
+}
+
+.barraMovil{
+    position: fixed;
+    bottom: 0%;
+    left: 85%;
+    font-size: 20px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .titulos1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info .title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .contact-info .phone:before {
+    content: "\260E"; /* icono del telefono */
+    margin-right: 5px;
+  }
+  
+  .contact-info .address:before {
+    content: "\1F3E0"; /* icono de direccion */
+    margin-right: 5px;
+  }
+  
+  .contact-info .postal-code:before {
+    content: "\1F4C5"; /*icono de codigo postal */
+    margin-right: 5px;
+  }
+  
+  .contact-info .email:before {
+    content: "\2709"; /* icono de correo electronico */
+    margin-right: 5px;
+  }
+
+
+
+.contenedorFaqs {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+.tituloFaqs {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.titulo2Faqs {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+.parrafoFaqs {
+    margin-bottom: 20px;
+  }
+
+
+
+@media only screen and  (max-width: 600px){
+
+    header{
+        display: none;
+    }
+
+    .start{
+        font-size: 150px;
+        display: flex;
+    }
+
+    .logos{
+        max-width: 150px;
+        max-height: 80px;
+    }
+
+
+  
+}
+
+@media only screen and  (max-width: 768px){
+
+    header{
+        display: none;
+    }
+
+    .start{
+        font-size: 150px;
+        display: flex;
+    }
+
+    .logos{
+        max-width: 150px;
+        max-height: 80px;
+    }
+
+
+  
+}
